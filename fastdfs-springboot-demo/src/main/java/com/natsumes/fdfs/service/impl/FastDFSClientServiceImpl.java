@@ -50,4 +50,14 @@ public class FastDFSClientServiceImpl implements FastDFSClientService {
         bytes = fastFileStorageClient.downloadFile(group, path, downloadByteArray);
         return bytes;
     }
+
+    /**
+     * 删除文件
+     *
+     * @param fileUrl 文件URL
+     */
+    @Override
+    public void deleteFile(String fileUrl)  {
+        fastFileStorageClient.deleteFile(fileUrl);
+    }
 }

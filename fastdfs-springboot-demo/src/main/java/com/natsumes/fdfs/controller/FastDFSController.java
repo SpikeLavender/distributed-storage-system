@@ -53,4 +53,9 @@ public class FastDFSController {
         }
     }
 
+    @RequestMapping("/delete")
+    public void deleteFile(String fileUrl) {
+        fastDFSClientService.deleteFile(fileUrl);
+    }
+
 }

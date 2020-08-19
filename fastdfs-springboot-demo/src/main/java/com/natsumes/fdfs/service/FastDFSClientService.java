@@ -27,5 +27,10 @@ public interface FastDFSClientService {
      */
     byte[] downloadFile(String fileUrl) throws IOException;
 
-
+    /**
+     * 删除文件
+     *
+     * @param fileUrl 文件URL
+     */
+    void deleteFile(String fileUrl);
 }
