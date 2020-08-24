@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      database: natsumes
+      host: 123.207.218.247
+      port: 27017
+      username: "natsume"
+      password: "123456"
