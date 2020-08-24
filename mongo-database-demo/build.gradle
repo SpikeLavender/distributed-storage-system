@@ -26,6 +26,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE'
     implementation 'org.springframework.boot:spring-boot-starter-data-mongodb:2.3.3.RELEASE'
     implementation 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor "org.projectlombok:lombok:1.18.8"
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.3.3.RELEASE'
 }
 
