@@ -4,6 +4,7 @@
 
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-data-mongodb')
+    implementation('com.github.tobato:fastdfs-client:1.26.1-RELEASE')
 }
 
 
