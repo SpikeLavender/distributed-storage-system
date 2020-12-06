@@ -43,7 +43,7 @@ public class ElasticsearchTest {
 
     private RestHighLevelClient client;
 
-    private RestClient restClient;
+    //private RestClient restClient;
 
     private final static String INDEX_NAME = "elasticsearch_test";
 
