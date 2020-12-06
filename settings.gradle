@@ -2,6 +2,6 @@ rootProject.name = 'distributed-storage-system'
 include 'neo4j-database-demo'
 include 'mongo-database-demo'
 include 'fastdfs-springboot-demo'
-include 'db-java-demo'
 include 'elasticsearch-database-demo'
+include 'redis-database-demo'
 

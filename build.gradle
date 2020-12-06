@@ -5,7 +5,6 @@ buildscript {
     ext {
         //定义一个变量，统一规定springboot的版本
         springBootVersion = '2.1.7.RELEASE'
-//        springCloudVersion = 'Finchley.SR1'
     }
     repositories {
         maven {
@@ -44,23 +43,25 @@ subprojects {
     apply plugin: 'io.spring.dependency-management'
 
     group 'com.natsumes'
-    version '1.0-SNAPSHOT'
+    version '1.0.0'
 
     dependencies {
         implementation('org.springframework.boot:spring-boot-starter-web')
+        implementation('com.alibaba:fastjson:1.2.69')
         compileOnly('org.projectlombok:lombok')
         annotationProcessor('org.projectlombok:lombok')
         testCompile('org.springframework.boot:spring-boot-starter-test')
     }
 
     dependencyManagement {
-//        imports {
-//            //spring bom helps us to declare dependencies without specifying version numbers.
-//            mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-//        }
+        imports {
+            //spring bom helps us to declare dependencies without specifying version numbers.
+            mavenBom "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
+        }
     }
 
     jar {
+        enabled = true
         manifest.attributes provider: 'gradle'
     }
 
